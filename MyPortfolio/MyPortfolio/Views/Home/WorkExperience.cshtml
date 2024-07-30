@@ -1,0 +1,46 @@
+﻿@model IEnumerable<MyPortfolio.Models.WorkExperience> 
+
+@{
+    ViewData["Title"] = "Work Experience";
+}
+
+<script>
+    window.onload = function () {
+        window.location.href = '@Url.Action("Index", "WorkExperience")';
+    };
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<@* div class="jumbotron">
+    <h1 class="display-4">Work Experience</h1>
+    <p class="lead">Here are some of the roles and responsibilities I have undertaken:</p>
+    <hr class="my-4">
+    @if (Model != null && Model.Any())
+    {
+        <div class="list-group">
+            @foreach (var experience in Model)
+            {
+                <a href="@Url.Action("Details", "WorkExperience", new { id = experience.Id })" class="list-group-item list-group-item-action">
+                    <h5 class="mb-1">@experience.Title at @experience.Company</h5>
+                    <p class="mb-1">@experience.Description</p>
+                    <small>@experience.StartDate - @experience.EndDate</small>
+                </a>
+            }
+        </div>
+    }
+    else
+    {
+        <p>No work experiences found.</p>
+    }
+</div> *@

@@ -1,0 +1,14 @@
+﻿<!-- Views/Home/Index.cshtml -->
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="jumbotron">
+    <img src="~/images/profile.jpeg" alt="Profile Picture" class="img-fluid rounded-circle profile-pic" style="width: 150px; height: 150px;">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">I'm a .NET Developer. Welcome to my portfolio.</p>
+    <hr class="my-4">
+    <p>Check out my projects and get to know more about me.</p>
+    <a class="btn btn-primary btn-lg" href="@Url.Action("Index", "WorkExperience")" role="button">View Work Experience</a>
+</div>
