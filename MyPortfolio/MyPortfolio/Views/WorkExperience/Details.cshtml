@@ -9,7 +9,21 @@
     <h1 class="display-4">@Model.Title</h1>
     <p class="lead">Company: @Model.Company</p>
     <p>Duration: @Model.StartDate - @Model.EndDate</p>
+    <p>Location: @Model.Location</p>
     <hr class="my-4">
-    <p>@Model.Description</p>
+    @if (Model.Projects != null && Model.Projects.Length > 0)
+    {
+        for (int i = 0; i < Model.Projects.Length; i++)
+        {
+            <p>Project: @Model.Projects[i]</p>
+            <p>Project Description: @Model.ProjectDescription[i]</p>
+            <hr class="my-4">
+        }
+    }
+    else
+    {
+        <p>No projects available.</p>
+    }
+    <hr class="my-4">
     <a class="btn btn-primary btn-lg" href="@Url.Action("Index", "WorkExperience")" role="button">Back to List</a>
 </div>

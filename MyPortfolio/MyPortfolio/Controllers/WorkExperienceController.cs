@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MyPortfolio.Data;
 using MyPortfolio.Models;
 
 public class WorkExperienceController : Controller

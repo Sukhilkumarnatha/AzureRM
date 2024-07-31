@@ -13,7 +13,7 @@
         {
             <a href="@Url.Action("Details", "WorkExperience", new { id = experience.Id })" class="list-group-item list-group-item-action">
                 <h5 class="mb-1">@experience.Title at @experience.Company</h5>
-                <p class="mb-1">@experience.Description</p>
+                <p class="mb-1">@experience.Location</p>
                 <small>@experience.StartDate - @experience.EndDate</small>
             </a>
         }

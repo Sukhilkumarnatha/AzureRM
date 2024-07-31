@@ -57,3 +57,15 @@ h1, h2, h3, h4, h5, h6, p {
         margin-right: 3px;
     }
 */
+
+/*.btn-custom {
+    border: 1px solid black;*/ /* Dark outline */
+    /*color: white;*/ /* Light text */
+    /*background-color: white;*/ /* Transparent background */
+/*}
+
+    .btn-custom img {
+        vertical-align: middle;*/ /* Ensures the icon is vertically aligned */
+        /*margin-right: 5px;*/ /* Space between the icon and the text */
+    /*}*/
+
